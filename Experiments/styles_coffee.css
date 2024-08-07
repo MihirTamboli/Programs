@@ -1,0 +1,32 @@
+body{
+  background-image: url("Coffee-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 10%;
+}
+.rates{
+    height: 50px;
+    width: 50px;
+}
+.type {
+    border-collapse:collapse;
+    margin: 30px;
+    font-size: 1em;
+    min-width: 400px;
+    text-align: center;
+    border-radius: 15px;
+    
+}
+.type thead tr {
+    background-color: brown;
+    color: rgb(253, 251, 251);
+    text-align: center;
+    font-weight: bold;
+}
+.type th,
+.type td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+
+}
