@@ -1,0 +1,35 @@
+<html>
+<head>
+<script language ="javascript">
+   function fun(x)
+   {
+var countries= ["Afghanistan", "Armenia", "Azerbaijan","Bahrain","Bangladesh","Bhutan","Brunei"];
+var capitals= ["Kabul", "Yerevan", "Baku","Al-Manámah","Dhaka","Thimphu","Bandar Seri Begawan"];
+var languages=["Pushtu, Dari Persian","Armenian","Azerbaijani","Arabic*, English","Bangla*, English","Dzongkha","Malay"];
+//alert(x);
+document.getElementById("demo1").innerHTML = countries[x-1]
+document.getElementById("demo2").innerHTML = capitals[x-1]
+document.getElementById("demo3").innerHTML =  languages[x-1]
+  }
+
+</script></head>
+<body>
+<table width =100% border=1 bgcolor=cyan>
+<tr align =center>
+    <Td> <input type ="button" value = "Afghanistan" onClick="fun(1)"></td>
+    <Td> <input type ="button" value = "Armenia" onClick="fun(2)"></td>
+    <Td> <input type ="button" value = "Azerbaijan" onClick="fun(3)"></td>
+    <Td> <input type ="button" value = "Afghanistan" onClick="fun(4)"></td>
+    <Td> <input type ="button" value = "Armenia" onClick="fun(5)"></td>
+    <Td> <input type ="button" value = "Azerbaijan" onClick="fun(6)"></td>
+    <Td> <input type ="button" value = "Azerbaijan" onClick="fun(7)"></td>
+</tr>  
+</table>
+<table width =100%>
+<Tr> <td>Country></td><td> Capital</td><td> Language</td></tr>
+<tr><Td><p id="demo1"></p></td>
+<Td><p id="demo2"></p></td>
+<Td><p id="demo3"></p></td>
+</tr>
+</table>
+</body></html>

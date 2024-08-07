@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><script language ="javascript">
+     function helpMakeBill()
+     {
+      var Prices= ["2000", "800", "200","3434","673"];
+     var mprice =  document.getElementById("kapada").selectedIndex;
+     //alert(" selected items price " +Prices[mprice]);
+      var mqty = parseInt(document.getElementById("qty").value);
+      // alert(" selected items qty " +mqty);
+      var mamt = Prices[mprice] * mqty;
+      //alert("Amount will be "+mamt);
+      document.getElementById("BillAmount").value = ""+mamt;
+     }
+</script>
+</head>
+<body>
+
+<h2>Select cloth</h2>
+
+
+<form action="/action_page.php">
+<pre>
+  <label for="cars">Choose a cloth:</label> <label for="cars">Quantity</label>
+      <select id="kapada" name="kapada" onChange="helpMakeBill()">
+    <option value="Sari">Sari</option>
+    <option value="Shirt">Shirt</option>
+    <option value="Duppata">Duppata</option>
+    <option value="Cap">Cap</option>
+  </select>  <input type ="text" id="qty" name ="qty" value ="1" width = "10%">
+ 
+ 
+  <hr>
+  <input type ="text" id ="BillAmount" name ="BillAmount" value ="Rs.">
+ </pre>
+</form>
+
+</body>
+</html>

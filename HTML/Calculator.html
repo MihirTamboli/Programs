@@ -1,0 +1,239 @@
+<html>
+<head>
+ <script language ="javascript">
+var str;
+var ans;
+var operation;
+var num1,num2;
+var mem;   
+function fun(x)
+    { 
+if(x=="1")
+{
+mem="";
+}
+if(x=="2")
+{document.getElementById("txtDisplay").value=""+mem;
+}
+if(x=="3")
+{mem=document.getElementById("txtDisplay").value;
+}
+if(x=="4")
+{var temp;
+ temp=parseInt(document.getElementById("txtDisplay").value);
+ var memory;
+ memory=parseInt(mem);
+ memory=memory+temp;
+ mem=""+memory;
+ //alert(mem);
+ document.getElementById("txtDisplay").value=mem;
+}
+if(x=="5")
+{var temp;
+ temp=parseInt(document.getElementById("txtDisplay").value);
+ var memory;
+ memory=parseInt(mem);
+ memory=memory-temp;
+ mem=""-memory;
+ //alert(mem);
+ document.getElementById("txtDisplay").value=mem;
+}
+if(x=="6")
+{var str;
+ str=document.getElementById("txtDisplay").value;
+ var st=str.substring(0,str.length-1);
+ document.getElementById("txtDisplay").value=st;
+ //alert(st);
+} 
+if(x=="10")
+{var str=document.getElementById("txtDisplay").value;
+ var number;
+ number=parseInt(str);
+ str=""+Math.sqrt(number);
+ //alert(str);
+ document.getElementById("txtDisplay").value=str;
+}
+if(x=="11") 
+{
+str =document.getElementById("txtDisplay").value;
+str = str +"7";
+document.getElementById("txtDisplay").value=str;
+}
+//for plus button
+if(x=="28")
+{str =document.getElementById("txtDisplay").value;
+ num1=parseInt(str);
+ document.getElementById("txtDisplay").value="0";
+ operation=1;
+ num2=0;
+ //alert(num1);
+}
+//for minus button
+if(x=="24")
+{str =document.getElementById("txtDisplay").value;
+ num1=parseInt(str);
+ document.getElementById("txtDisplay").value="0";
+ operation=2;
+ num2=0;
+ 
+}
+//for multipy button
+if(x=="19")
+{str =document.getElementById("txtDisplay").value;
+ num1=parseInt(str);
+ document.getElementById("txtDisplay").value="0";
+ operation=3;
+ num2=0;
+}
+//for division button
+if(x=="14")
+{str =document.getElementById("txtDisplay").value;
+ num1=parseInt(str);
+ document.getElementById("txtDisplay").value="0";
+ operation=4;
+ num2=0;
+}
+if(x=="25")
+{str =document.getElementById("txtDisplay").value;
+ num2=parseInt(str);
+ switch (operation)
+  {case 1:ans=num1+num2;
+   break;
+   case 2:ans=num1-num2;
+   break;
+   case 3:ans=num1*num2;
+   break;
+   case 4:ans=num1/num2;
+   break;
+  }
+ document.getElementById("txtDisplay").value=ans;
+ //alert(ans);
+}
+//for CE button
+if(x=="7")
+{document.getElementById("txtDisplay").value="0";
+ num2=0;
+ ans=0;
+ operation=0;
+}
+//for C button
+if(x=="8")
+{document.getElementById("txtDisplay").value="0";
+ num1=0;
+ num2=0;
+ ans=0;
+ operation=0;
+}
+if(x=="12") 
+{
+str =document.getElementById("txtDisplay").value;
+str = str +"8";
+document.getElementById("txtDisplay").value=str;
+}
+if(x=="13") 
+{
+str =document.getElementById("txtDisplay").value;
+str = str +"9";
+document.getElementById("txtDisplay").value=str;
+}
+if(x=="16") 
+{
+str =document.getElementById("txtDisplay").value;
+str = str +"4";
+document.getElementById("txtDisplay").value=str;
+}
+if(x=="17") 
+{
+str =document.getElementById("txtDisplay").value;
+str = str +"5";
+document.getElementById("txtDisplay").value=str;
+}
+if(x=="18") 
+{
+str =document.getElementById("txtDisplay").value;
+str = str +"6";
+document.getElementById("txtDisplay").value=str;
+}
+if(x=="21") 
+{
+str =document.getElementById("txtDisplay").value;
+str = str +"1";
+document.getElementById("txtDisplay").value=str;
+}
+if(x=="22") 
+{
+str =document.getElementById("txtDisplay").value;
+str = str +"2";
+document.getElementById("txtDisplay").value=str;
+}
+if(x=="23") 
+{
+str =document.getElementById("txtDisplay").value;
+str = str +"3";
+document.getElementById("txtDisplay").value=str;
+}
+if(x=="26") 
+{
+str =document.getElementById("txtDisplay").value;
+str = str +"0";
+document.getElementById("txtDisplay").value=str;
+}
+if(x=="27") 
+{
+str =document.getElementById("txtDisplay").value;
+str = str +".";
+document.getElementById("txtDisplay").value=str;
+}
+    }
+</script></head>
+<body>
+<table width =50% height=40% align="center" border =1 bgcolor="#CC33CC" cellpadding="=1%" cellspacing="2%">
+<tr align="center"> <td colspan="5"> <input type ="text" id ="txtDisplay" name ="txtDisplay" value ="0">
+      </td>
+</tr>
+<tr  align="center">
+    <Td> <input type ="button" value = "MC" onClick="fun(1)" width ="100%" style="background-color:#99CCFF"></td>
+    <Td> <input type ="button" value = "MR" onClick="fun(2)" width ="100%" style="background-color:pink"></td>
+    <Td> <input type ="button" value = "MS" onClick="fun(3)" width ="100%" style="background-color:grey"></td>
+    <Td> <input type ="button" value = "M+" onClick="fun(4)" width ="100%" style="background-color:orange"></td>
+    <Td> <input type ="button" value = "M-" onClick="fun(5)" width ="100%" style="background-color:green"></td>
+</tr>  
+<tr align="center">
+    <Td> <input type ="button" value = "BK" onClick="fun(6)" width ="100%" style="background-color:#00FFFF"></td>
+    <Td> <input type ="button" value = "CE" onClick="fun(7)" width ="100%" style="background-color:yellow"></td>
+    <Td> <input type ="button" value = "C" onClick="fun(8)"  width ="100%" style="background-color:gold"></td>
+    <Td> <input type ="button" value = "PM" onClick="fun(9)" width ="100%" style="background-color:silver"></td>
+    <Td> <input type ="button" value = "SQRT" onClick="fun(10)" width ="100%" style="background-color:#FFFF99"></td>
+</tr>  
+<tr align="center">
+    <Td> <input type ="button" value = "7" onClick="fun(11)" width ="100%"></td>
+    <Td> <input type ="button" value = "8" onClick="fun(12)" width="100%"></td>
+    <Td> <input type ="button" value = "9" onClick="fun(13)"></td>
+    <Td> <input type ="button" value = "/" onClick="fun(14)"></td>
+    <Td> <input type ="button" value = "%" onClick="fun(15)"></td>
+</tr>  
+<tr align="center">
+    <Td> <input type ="button" value = "4" onClick="fun(16)" width ="100%"></td>
+    <Td> <input type ="button" value = "5" onClick="fun(17)" width="100%"></td>
+    <Td> <input type ="button" value = "6" onClick="fun(18)"></td>
+    <Td> <input type ="button" value = "*" onClick="fun(19)"></td>
+    <Td> <input type ="button" value = "1/x" onClick="fun(20)"></td>
+</tr>
+<tr align="center">
+    <Td> <input type ="button" value = "1" onClick="fun(21)" width ="100%"></td>
+    <Td> <input type ="button" value = "2" onClick="fun(22)" width="100%"></td>
+    <Td> <input type ="button" value = "3" onClick="fun(23)"></td>
+    <Td> <input type ="button" value = "-" onClick="fun(24)"></td>
+    <Td rowspan="2"> <input type ="button" value = "=" onClick="fun(25)" height=10%></td>
+</tr>
+<tr align="center">
+    <Td colspan="2"> <input type ="button" value = "0" onClick="fun(26)" width ="100%"></td>
+    <Td> <input type ="button" value = "." onClick="fun(27)" width="100%"></td>
+    <Td> <input type ="button" value = "+" onClick="fun(28)"></td>
+   
+   
+</tr>
+
+<center><h1><p id="demo"></p></h1></center>
+</body></html>
+ 

@@ -1,0 +1,21 @@
+<html>
+<head>
+<script language ="javascript">
+   function fun(x)
+   {
+var countries= ["Afghanistan", "Armenia", "Azerbaijan"];
+var capitals= ["Kabul", "Yerevan", "Baku"];
+//alert(x);
+document.getElementById("demo").innerHTML = capitals[x-1]
+  }
+
+</script></head>
+<body>
+<table width =100%>
+<tr>
+    <Td> <input type ="button" value = "Afghanistan" onClick="fun(1)"></td>
+    <Td> <input type ="button" value = "Armenia" onClick="fun(2)"></td>
+    <Td> <input type ="button" value = "Azerbaijan" onClick="fun(3)"></td>
+</tr>  
+<center><h1><p id="demo"></p></h1></center>
+</body></html>

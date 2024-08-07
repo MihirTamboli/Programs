@@ -1,0 +1,24 @@
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <script type="application/javascript">
+    function draw() {
+      var canvas = document.getElementById('carum');
+      if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+    ctx.fillRect(25, 25, 100, 100);
+    ctx.clearRect(35, 35, 80, 80);
+    ctx.strokeRect(40, 40, 70, 70);
+    ctx.beginPath();
+    ctx.moveTo(41,41);
+    ctx.lineTo(78, 78);
+    ctx.lineTo(80, 40);
+    //ctx.fill();
+  }
+}
+ </script>
+ </head>
+ <body onload="draw();">
+   <canvas id="carum" width="550" height="550"></canvas>
+ </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language ="javascript">
+   function sq()
+   {
+var mnum;
+mnum =parseInt( document.getElementById("num").value);
+//alert(""+mnum);
+var mans;
+mans = mnum *mnum;//alert(x);
+//alert(""+mans);
+document.getElementById("ans").value  = mans
+  }
+
+</script></head>
+<body>
+<table width =100%>
+<tr>
+    <Td> <input type ="text" id ="num" value = "5" ></td>
+    <Td> <input type ="button" value = "Square" onClick="sq()"></td>
+    <Td> <input type ="text" id = "ans" value = "0"></td>
+</tr>  
+<center><h1><p id="demo"></p></h1></center>
+</body></html>
