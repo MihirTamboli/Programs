@@ -1,0 +1,189 @@
+<html>
+<head>
+ <script language ="javascript">
+  var player=1;
+  function umpire()
+  {
+    var a,b,c,d,e,f,g,h,i;
+    a =document.getElementById("b1").value;
+    b= document.getElementById("b2").value;
+    c= document.getElementById("b3").value;
+    d =document.getElementById("b4").value;
+    e= document.getElementById("b5").value;
+    f= document.getElementById("b6").value;
+    g =document.getElementById("b7").value;
+    h= document.getElementById("b8").value;
+    i= document.getElementById("b9").value;
+    if(a==b && b==c && a=="X")
+       alert("Congratulations... Player 1 has won the Game");
+    if(d==e && e==f && d=="X")
+       alert("Congratulations... Player 1 has won the Game"); 
+    if(g==h && h==i && i=="X")
+       alert("Congratulations... Player 1 has won the Game");
+    if(a==e && e==i && i=="X")
+       alert("Congratulations... Player 1 has won the Game");
+    if(c==e && e==g && g=="X")
+       alert("Congratulations... Player 1 has won the Game");  
+    if(b==e && e==h && h=="X")
+       alert("Congratulations... Player 1 has won the Game");
+    if(a==d && d==g && g=="X")
+       alert("Congratulations... Player 1 has won the Game");
+    if(c==f && f==i && i=="X")
+       alert("Congratulations... Player 1 has won the Game");              
+       
+    if(a==b && b==c && a=="O")
+       alert("Congratulations... Player 2 has won the Game");
+    if(d==e && e==f && d=="O")
+       alert("Congratulations... Player 2 has won the Game"); 
+    if(g==h && h==i && i=="O")
+       alert("Congratulations... Player 2 has won the Game");
+    if(a==e && e==i && i=="O")
+       alert("Congratulations... Player 2 has won the Game");
+    if(c==e && e==g && g=="O")
+       alert("Congratulations... Player 2 has won the Game");  
+    if(b==e && e==h && h=="O")
+       alert("Congratulations... Player 2 has won the Game");
+    if(a==d && d==g && g=="O")
+       alert("Congratulations... Player 2 has won the Game");
+    if(c==f && f==i && i=="O")
+       alert("Congratulations... Player 2 has won the Game");
+    
+             
+  }
+
+ function fun(x)
+ {
+     if(x==1)
+        {if(player ==1)
+           {document.getElementById("b1").value="X";
+            document.getElementById("b1").disabled = true;
+            player =2;umpire();
+           }
+        else
+           {document.getElementById("b1").value ="O";  
+            document.getElementById("b1").disabled = true;
+            player =1;umpire();
+           }
+        }
+     if(x==2)
+        {if(player ==1)
+           {document.getElementById("b2").value="X";
+            document.getElementById("b2").disabled = true;
+            player =2;umpire();
+           }
+        else
+           {document.getElementById("b2").value ="O";  
+            document.getElementById("b2").disabled = true;
+            player =1;umpire();
+           }
+
+        }
+     if(x==3)
+        {if(player ==1)
+           {document.getElementById("b3").value="X";
+            document.getElementById("b3").disabled = true;
+            player =2;umpire();
+           }
+        else
+           {document.getElementById("b3").value ="O";  
+            document.getElementById("b3").disabled = true;
+            player =1;umpire();
+           }
+
+        }
+     if(x==4)
+        {if(player ==1)
+           {document.getElementById("b4").value="X";
+            document.getElementById("b4").disabled = true;
+            player =2;umpire();
+           }
+        else
+           {document.getElementById("b4").value ="O";
+           document.getElementById("b4").disabled = true;
+            player =1;umpire();
+           }
+        }    
+     if(x==5)
+        {if(player ==1)
+           {document.getElementById("b5").value="X";
+            document.getElementById("b5").disabled = true;
+            player =2;umpire();
+           }
+        else
+           {document.getElementById("b5").value ="O";
+            document.getElementById("b5").disabled = true;
+            player =1;umpire();
+           }
+        }    
+     if(x==6)
+        {if(player ==1)
+           {document.getElementById("b6").value="X";
+            document.getElementById("b6").disabled = true;
+            player =2;umpire();
+           }
+        else
+           {document.getElementById("b6").value ="O";
+            document.getElementById("b6").disabled = true;
+            player =1;umpire();
+           }
+        }        
+     if(x==7)
+        {if(player ==1)
+           {document.getElementById("b7").value="X";
+            document.getElementById("b7").disabled = true;
+            player =2;umpire();
+           }
+        else
+           {document.getElementById("b7").value ="O";
+            document.getElementById("b7").disabled = true;
+            player =1;umpire();
+           }
+        }    
+     if(x==8)
+        {if(player ==1)
+           {document.getElementById("b8").value="X";
+            document.getElementById("b8").disabled = true;
+            player =2;umpire();
+           }
+        else
+           {document.getElementById("b8").value ="O";
+            document.getElementById("b8").disabled = true;
+            player =1;umpire();
+           }
+        }  
+     if(x==9)
+        {if(player ==1)
+           {document.getElementById("b9").value="X";
+            document.getElementById("b9").disabled = true;
+            player =2;umpire();
+           }
+        else
+           {document.getElementById("b9").value ="O";
+            document.getElementById("b9").disabled = true;
+            player =1;umpire();
+           }
+        }          
+}
+</script></head>
+<body>
+<table width =50% height=40% align="center" border =1 bgcolor="#0000FF">
+<tr align="center">  
+</td>
+</tr>
+<tr align="center">
+    <Td> <input type ="button" id ="b1"  onClick="fun(1)" width ="100%"></td>
+    <Td> <input type ="button" id ="b2" onClick="fun(2)" width="100%"></td>
+    <Td> <input type ="button" id ="b3" onClick="fun(3)"></td>    
+</tr>
+<tr align="center">
+    <Td> <input type ="button" id="b4"  onClick="fun(4)" width ="100%"></td>
+    <Td> <input type ="button" id ="b5" onClick="fun(5)" width="100%"></td>
+    <Td> <input type ="button" id ="b6" onClick="fun(6)"></td>    
+</tr>  
+<tr align="center">
+    <Td> <input type ="button" id="b7"  onClick="fun(7)" width ="100%"></td>
+    <Td> <input type ="button" id ="b8" onClick="fun(8)" width="100%"></td>
+    <Td> <input type ="button" id ="b9" onClick="fun(9)"></td>    
+</tr>
+<center><h1><p id="demo"></p></h1></center>
+</body></html>
